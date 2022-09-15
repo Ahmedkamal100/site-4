@@ -1,0 +1,582 @@
+
+.Container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/*---------------------start home -------------------------------------*/
+
+.home {
+  padding: 100px 0px;
+  background-image: url(../img/intro-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(245, 248, 253);
+  height: 100vh;
+}
+
+.home .con {
+  padding-top: 100px;
+}
+
+.home .con .title {
+  padding-top: 70px;
+}
+
+.home .con .title h2 {
+  color: #413e66;
+  margin-bottom: 25px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.home .con .title h2 span {
+  color: #1bb1dc;
+}
+
+.home .btn {
+  border: 2px solid white;
+  border-radius: 15px;
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media(max-width:767px) {
+  .header .social-links {
+      display: none;
+  }
+
+  .header h1 {
+      margin: 0;
+      padding: 0;
+  }
+
+  .Container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .home {
+      height: auto;
+      padding: 50px 0px;
+  }
+
+  .home .con {
+      padding: 0px;
+  }
+
+  .home .con .row {
+      flex-direction: column-reverse;
+      padding: 0;
+      margin: 0;
+  }
+
+  .home .con .title {
+      padding-top: 20px;
+      text-align: center;
+  }
+
+  .home .con .title h2 {
+      font-size: 30px;
+      font-weight: 600;
+  }
+
+  .home .image {
+      justify-content: center;
+      text-align: center;
+  }
+
+  .home img {
+      width: 86%;
+      margin: auto;
+  }
+
+}
+
+/*================================end home==============================================*/
+/*====================================navbar==============*/
+.header {
+  transition: .5s;
+  z-index: 997;
+  background: #fff;
+  box-shadow: 0 0 30px rgb(127 137 161 / 30%);
+}
+
+.header h1 a {
+  color: #413e66;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.navbar ul li {
+  padding: 15px !important;
+}
+
+.navbar ul li a {
+  color: #413e66;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.5s;
+  margin-right: 10px;
+  position: relative;
+}
+
+.header .navbar ul li a::before {
+  content: "";
+  width:0;
+  height: 3px;
+  position: absolute;
+  top: -13px;
+  left: 0;
+  background-color: #1bb1dc;
+  transition: all 0.2s;
+}
+
+.navbar ul li a:hover::before {
+  width: 100%;
+}
+
+.navbar ul li a:hover {
+  color: #1bb1dc;
+}
+
+.header .social-links a i {
+  color: #413e66;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.5s;
+  margin-right: 10px;
+}
+
+.header .social-links a i:hover {
+  color: #1bb1dc;
+}
+
+/*================================================aboutus======*/
+.aboutus{
+    padding: 60px 0px 40px;
+}
+.aboutus .col-md-6 img{
+    width: 600px;
+}
+
+
+.aboutus .pp{
+    text-align: center;
+ }
+ .aboutus a{
+   font-weight: 600;
+   color: rgb(24, 24, 59);
+   
+ }
+ .aboutus  button{
+   border-radius: 50%;
+   padding: 10px;
+
+   float: left;
+   margin-right: 10px;
+ }
+
+ /*========================================services=============*/
+  
+ .service {
+  padding: 70px 0px;
+  overflow: auto;
+  background: #ecf5ff;
+}
+
+.service .service-header {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.service .service-header h1 {
+  color: #283d50;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.service .service-header p {
+  width: 80%;
+  margin: auto;
+  color: #556877;
+}
+
+.service a {
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.service .box {
+  padding: 25px;
+  position: relative;
+  overflow: auto;
+  box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
+  background-color: white;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.service .box:hover {
+  transform: scale(1.07);
+}
+
+.service .box:hover a {
+  color: #1bb1dc;
+}
+
+.service .icon {
+  border-radius: 50%;
+  background: rgba(255, 89, 166, 0.3);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+}
+
+.service .box .icon i {
+  font-size: 30px;
+  color: #ff689b;
+}
+
+.service .box .title {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+  padding-top: 20px;
+}
+
+@media(max-width:767px) {
+  .service .service-header {
+      width: 100%;
+  }
+}
+  
+  /*===========================================why==================*/
+  .why{
+    padding: 80px 0px;
+  }
+  .why img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .why .wh{
+     text-align: center;
+     color: rgb(6, 46, 81);
+     
+  }
+
+  .why i{
+    color: #1bb1dc;
+    font-size: 25px;
+  }
+
+  .why .icon a{
+     font-size: 14px;
+     color: rgb(6, 46, 81);
+     padding: 0;
+     margin-left: 10px;
+     text-decoration: none;
+  }
+
+  .why .icon p{
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  
+ 
+  /*===========================================call==================*/
+.call{
+    background-color: rgb(20, 20, 50);
+    padding: 80px;
+  }
+.call button{
+    border: solid 3px white;
+    width:200px;
+    margin-top: 50px;
+    color: aliceblue;
+}
+.call .to{
+   color: aliceblue;
+  }
+ /*===========================================volu==================*/
+.volu .vo img{
+    width: 100%;
+    height: 100%;
+}
+.volu .vo .hp{
+   margin-top:100px;
+}
+
+/*===========================================portfolio==================*/
+#navs .na{
+    text-align: center;
+    margin-bottom: 20px;
+ }
+  .nav button{
+    background-color: rgb(211, 211, 227) !important; 
+    border-radius: 30px !important;
+    padding: 10px 60px;
+    margin-bottom: 50px !important;
+  }
+  .nav :hover{
+    background-color: blue !important;
+  }
+  .tab-content img{
+   margin-top: 20px;
+  }
+  /*===========================================testmoniles==================*/
+  
+   /*======================== start Testimonial ========================================*/
+
+.Testimonial {
+  padding: 70px 0px;
+}
+
+.Testimonial .Testimonial-header {
+  width: 30%;
+  margin: auto;
+}
+
+.Testimonial .Testimonial-header h1 {
+  text-align: center;
+  color: #283d50;
+  font-weight: 600;
+}
+
+.carousel-indicators {
+  bottom: -30px !important;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid #1bb1dc;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #1bb1dc;
+}
+
+.Testimonial .carousel-inner .carousel-item img {
+  border: 1px solid #1bb1dc;
+}
+
+.Testimonial .carousel-inner .carousel-item .text {
+  margin-top: 25px;
+}
+
+.Testimonial .carousel-inner .carousel-item .text h3 {
+  color: rgb(15, 15, 15);
+  font-size: 28px;
+  font-weight: 800;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Testimonial .carousel-inner .carousel-item .text h4 {
+  color: rgb(153, 152, 152);
+  font-size: 15px;
+}
+
+@media(max-width:767px) {
+  .Testimonial .Testimonial-header {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+/*=================== end test =====================================*/
+
+
+
+
+
+  /*===========================================team==================*/
+.Team{
+  background-color: #a4cad4;
+  padding: 50px 0px;
+}
+  .Team .te{
+    text-align: center;
+
+  }
+
+
+.card{
+  margin-top: 50px;
+ 
+}
+  
+
+.card .bodes{
+padding: 80px;
+
+
+}
+
+.profile{
+  position: relative;
+  overflow: hidden;
+  margin-right: 0px;
+
+}
+
+.caption{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70%;
+    bottom: 0px;
+    background: rgba(29, 28, 41, .6);
+    transition: all 0.5s;
+    cursor: pointer;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+.profile:hover .caption{
+  top:55%;
+  
+
+}
+
+.caption h1{
+  font-size: 18px;
+}
+
+
+.caption p{
+  font-size: 16px;
+  
+}
+.caption .sociallinks{
+  
+font-size: 15px;
+  
+}
+.caption .sociallinks {
+
+ flex-wrap: wrap;
+ justify-content: center;
+ display: flex;
+}
+.caption .sociallinks i{
+padding: 5px;
+color: #1bb1dc;
+font-size: 20px;
+ 
+}
+/*==============================client=============================*/
+.Clients .Our{
+  text-align: center;
+  margin-top: 100px;
+}
+.Clients img{
+  margin-left: 500px;
+  width: 200px;
+}
+
+
+/*===============================Pricing==============================*/
+.Pricing{
+  text-align: center;
+  margin-top: 100px;
+  background-color: #aad3de;
+  margin-bottom: 100px;
+  height: 600px;
+}
+.Pricing .card ::before {
+  content: "";
+  width:0;
+  height: 3px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background-color: #1bb1dc;
+  transition: all 0.2s;
+}
+
+.card :hover::before {
+  width: 100%;
+}
+
+.Pricing .card{
+  transition: all 1s;
+}
+
+.Pricing .card:hover {
+  transform: scale(1.07);
+}
+@media(max-width:767px){
+  .Pricing{
+    text-align: center;
+    margin-top: 100px;
+    background-color: #aad3de;
+    margin-bottom: 100px;
+    height: auto;
+  }
+}
+
+/*==============================freq==============================*/
+
+
+.freq{
+  text-align: center;
+}
+.mb-0 .btn{
+  text-decoration: none;
+}
+   
+/*==============================footer=============================*/
+
+
+footer {
+  padding: 50px 0px;
+  background-color: #f5f8fd;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+* {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+user agent stylesheet
+footer {
+  display: block;
+}
+.bt {
+
+  font-size: 15px;
+  background-color: #1bb1dc;
+  border-color: #1bb1dc;
+}
+.finish{
+  text-align: center;
+}
